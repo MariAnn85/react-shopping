@@ -64,12 +64,12 @@ const app = React.createClass({
 });
 
 ReactDOM.render((
-  <Router>
+  <BrowserRouter>
     <Route path="/" component={app}>
       <IndexRoute component={one} />
       <Route path="/two" component={two} />
       <Route path="/three" component={three} />
     </Route>
-  </Router>
+  </BrowserRouter>
 ), document.getElementById('app'));
 
